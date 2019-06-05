@@ -42,7 +42,7 @@ def registo():
         v2 = request.form['pwd']
         v3 = request.form['cpwd']
         if existe(v1):
-            erro = 'O utilizador já existe.'
+            erro = 'O utilizador já existe '
         elif v2 != v3:
             erro = 'A palavra passe não coincide.'
         else:
